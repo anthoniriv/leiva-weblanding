@@ -1,0 +1,51 @@
+.mision-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    margin: 200px; /* Centra horizontalmente y ajusta el espacio superior */
+    padding: 50px;
+    font-family: 'Montserrat', sans-serif; /* Fuente aplicada al contenedor */
+  
+    .mision-content {
+      max-width: 50%;
+      color: #333;
+      padding-right: 20px;
+  
+      h1 {
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+        font-weight: bold;
+      }
+  
+      p {
+        font-size: 1.2rem;
+        line-height: 1.6;
+        font-weight: 400; /* Peso regular */
+        margin-bottom: 20px;
+      }
+    }
+  
+    .mision-image {
+      max-width: 40%;
+      img {
+        width: 100%;
+        border-radius: 10px; /* Bordes redondeados para la imagen */
+      }
+    }
+  
+    @media (max-width: 768px) {
+      flex-direction: column;
+      text-align: center;
+  
+      .mision-content,
+      .mision-image {
+        max-width: 100%;
+      }
+  
+      .mision-image {
+        margin-top: 20px;
+      }
+    }
+  }
+  

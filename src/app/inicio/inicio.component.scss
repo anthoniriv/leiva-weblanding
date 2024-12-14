@@ -1,0 +1,86 @@
+.inicio-container {
+  position: relative; /* Posiciona el contenedor relativamente para la superposición */
+  height: 70vh; /* Altura del componente */
+  width: 100%; /* Ocupa todo el ancho */
+  background-image: url('/assets/Drive1.jpg'); /* Ruta de la imagen */
+  background-size: cover; /* Escalar correctamente */
+  background-position: center; /* Centrar la imagen */
+  background-repeat: no-repeat; /* Evitar repeticiones */
+  display: flex;
+  justify-content: left; /* Alinear a la izquierda horizontalmente */
+  align-items: center; /* Centrar verticalmente */
+  text-align: left; /* Alinear texto a la izquierda */
+}
+
+.inicio-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Capa oscura semi-transparente */
+  z-index: 1; /* Asegura que la capa esté sobre la imagen */
+}
+
+.inicio-container * {
+  position: relative; /* Asegura que el contenido esté sobre la capa oscura */
+  z-index: 2; /* Asegura que el contenido esté sobre la capa oscura */
+}
+
+
+
+.overlay {
+  max-width: 800px; /* Ajustar el ancho del contenido */
+  color: white;
+  margin-left: 200px;
+  padding-right: 250px;
+  font-family: 'Montserrat', sans-serif;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+
+  h1 {
+    font-size: 60px; /* Tamaño del texto principal */
+    font-weight: bold;
+    line-height: 1.2;
+    margin-bottom: 30px; /* Espacio debajo del título */
+  }
+
+  .buttons {
+    display: flex;
+    flex-direction: column; /* Botones uno debajo del otro */
+    gap: 15px; /* Espaciado entre botones */
+    align-items: left;
+    padding-right: 80px;
+
+    .btn-primary {
+      background-color: #007bff;
+      color: white;
+      border: none;
+      padding: 15px 40px;
+      font-size: 1.2rem;
+      cursor: pointer;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+
+      &:hover {
+        background-color: #0056b3;
+      }
+    }
+
+    .btn-secondary {
+      background-color: white;
+      color: #333;
+      border: 2px solid #333;
+      padding: 15px 40px;
+      font-size: 1.2rem;
+      cursor: pointer;
+      border-radius: 5px;
+      transition: background-color 0.3s, color 0.3s;
+
+      &:hover {
+        background-color: #333;
+        color: white;
+      }
+    }
+  }
+}

@@ -1,0 +1,61 @@
+.valores-container {
+  text-align: center;
+  padding-top: -50px;
+  margin-left: 150px;
+  margin-right: 150px;
+  padding-bottom: 150px;
+  font-family: 'Montserrat', sans-serif;
+
+  h1 {
+    font-size: 2.8em;
+    color: #007bff;
+    font-weight: bold;
+    margin-bottom: 100px;
+  }
+
+  .valores-group {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    .valores-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr); 
+      gap: 20px;
+      justify-items: center;
+      align-items: center;
+
+      &:last-child {
+        grid-template-columns: repeat(3, 1fr); 
+      }
+
+      .valor-item {
+        text-align: center;
+
+        img {
+          width: 180px;
+          height: auto;
+          margin-bottom: 10px;
+        }
+
+        p {
+          font-size: 1.5rem;
+          font-weight: 500;
+          color: #333;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    .valores-group {
+      .valores-grid {
+        grid-template-columns: repeat(2, 1fr); 
+
+        &:last-child {
+          grid-template-columns: repeat(1, 1fr);
+        }
+      }
+    }
+  }
+}

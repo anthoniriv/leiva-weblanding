@@ -1,0 +1,120 @@
+/* Contenedor principal del footer */
+.footer-container {
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 50px;
+  font-family: 'Montserrat', sans-serif;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+/* Sección 1: Logo, Dirección, Correo y Derechos */
+.footer-section-1 {
+  flex: 1;
+  padding: 0 20px;
+  margin-left: 300px;
+
+  .footer-logo {
+    width: 150px;
+    margin-bottom: 10px;
+  }
+
+  p {
+    font-size: 0.9rem;
+    margin: 5px 0;
+  }
+}
+
+/* Sección 2: Menú */
+.footer-section-2 {
+  flex: 1;
+  padding: 0 20px;
+
+  h3 {
+    font-size: 1.2rem;
+    color: #28a745;
+    margin-bottom: 10px;
+  }
+
+  ul {
+    list-style-type: disc; /* Cambia el estilo de la lista a puntos */
+    padding-left: 20px; /* Espaciado a la izquierda para que los puntos estén visibles */
+
+    li {
+      margin: 8px 0; /* Espaciado entre elementos */
+      font-size: 1rem;
+
+      a {
+        text-decoration: none;
+        color: #fff; /* Blanco para los enlaces */
+        transition: color 0.3s;
+
+        &:hover {
+          color: #007bff; /* Azul para el efecto hover */
+        }
+      }
+    }
+  }
+}
+
+
+/* Sección 3: Libro de Reclamaciones y Redes Sociales */
+.footer-section-3 {
+  display: flex;
+  justify-content: flex-start;
+  gap: 30px;
+  margin-right: 100px;
+
+  /* Libro de Reclamaciones */
+  .reclamaciones {
+    .footer-book {
+      width: 300px;
+      margin-top: 50px;
+    }
+  }
+
+  /* Redes Sociales */
+  .social-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: 300px;
+
+    h3 {
+      font-size: 1.2rem;
+      color: #28a745;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+
+    .social-icons {
+      display: flex;
+      gap: 15px;
+
+      a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30px;
+        height: 30px;
+        background-color: #28a745;
+        border-radius: 50%;
+        transition: transform 0.3s;
+
+        &:hover {
+          transform: scale(1.2);
+        }
+
+        img {
+          width: 20px;
+          height: 20px;
+        }
+      }
+    }
+  }
+}

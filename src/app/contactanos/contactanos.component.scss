@@ -1,0 +1,115 @@
+.contacto-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 50px;
+    padding: 50px;
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 350px;
+    margin-right: 250px;
+  
+    .contacto-info {
+      flex: 1;
+  
+      h1 {
+        font-size: 2.5rem;
+        color: #28a745;
+        margin-bottom: 20px;
+      }
+  
+      p {
+        font-size: 1rem;
+        line-height: 1.6;
+        margin-bottom: 10px;
+      }
+  
+      strong {
+        font-size: 1.2rem;
+        color: #28a745;
+      }
+  
+      .social-icons {
+        margin-top: 20px;
+        display: flex;
+        gap: 15px;
+  
+        a {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 50px;
+          height: 50px;
+          background-color: #007bff; /* Fondo azul */
+          border-radius: 50%; /* Forma circular */
+          transition: transform 0.3s, background-color 0.3s;
+  
+          &:hover {
+            transform: scale(1.2);
+            background-color: #0056b3; /* Color azul más oscuro al pasar el cursor */
+          }
+  
+          img {
+            width: 24px; /* Ajusta el tamaño del ícono dentro del círculo */
+            height: 24px;
+          }
+        }
+      }
+    }
+  
+    .contacto-form {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+  
+      form {
+        background-color: #fff;
+        box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.5);
+        padding: 30px;
+        border-radius: 10px;
+        width: 100%;
+        max-width: 400px;
+  
+        input,
+        textarea {
+          resize: none;
+          width: 100%;
+          padding: 10px;
+          margin-bottom: 15px;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+          font-size: 1rem;
+        }
+  
+        button {
+          width: 100%;
+          padding: 10px;
+          background-color: #28a745;
+          color: white;
+          font-size: 1rem;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+          transition: background-color 0.3s;
+  
+          &:hover {
+            background-color: #218838;
+          }
+        }
+      }
+    }
+  
+    @media (max-width: 768px) {
+      flex-direction: column;
+  
+      .contacto-info,
+      .contacto-form {
+        flex: none;
+        width: 100%;
+      }
+  
+      .contacto-form {
+        margin-top: 20px;
+      }
+    }
+  }
+  

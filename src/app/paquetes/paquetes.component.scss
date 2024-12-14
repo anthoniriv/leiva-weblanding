@@ -1,0 +1,58 @@
+.paquetes-container {
+    background-color: #1a1a1a; /* Fondo oscuro */
+    text-align: center;
+    padding: 50px;
+    margin-bottom: 50px;
+    font-family: 'Montserrat', sans-serif;
+  
+    h1 {
+      font-size: 70px;
+      color: #007bff;
+      padding-top: 50px;
+      margin-bottom: 30px;
+      font-weight: bold;
+    }
+  
+    .paquetes-group {
+      display: flex;
+      margin-left: 350px;
+      margin-right: 350px;
+      flex-direction: column; /* Organiza los grids en columnas */
+      gap: 30px; /* Espaciado entre los grupos */
+  
+      .paquetes-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* Tres columnas por fila */
+        justify-items: center;
+  
+        .paquete-item {
+          background-color: #fff;
+          border-radius: 10px;
+          overflow: hidden;
+          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+          transition: transform 0.3s, box-shadow 0.3s;
+  
+          &:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+          }
+  
+          img {
+            width: 100%;
+            max-width: 350px;
+            height: auto;
+            display: block;
+          }
+        }
+      }
+    }
+  
+    @media (max-width: 768px) {
+      .paquetes-group {
+        .paquetes-grid {
+          grid-template-columns: repeat(2, 1fr); /* Ajusta a dos columnas en pantallas pequeñas */
+        }
+      }
+    }
+  }
+  
