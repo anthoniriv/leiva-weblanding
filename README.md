@@ -1,31 +1,62 @@
-# GrupoLeiva
+<div align="center">
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.5.
+# 🏢 Grupo Leiva
 
-## Deployment
+**Landing page for Grupo Leiva — statically prerendered with Angular.**
 
-Hosted on **GitHub Pages** as a statically prerendered site: https://anthoniriv.github.io/leiva-weblanding/
+<p>
+  <a href="https://anthoniriv.github.io/leiva-weblanding/"><img src="https://img.shields.io/badge/View_Live-00C853?style=for-the-badge&logo=github" alt="View Live"></a>
+</p>
 
-## Development server
+<p>
+  <img src="https://img.shields.io/badge/Angular_17-DD0031?style=flat&logo=angular&logoColor=white" alt="Angular">
+  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat&logo=typescript&logoColor=white" alt="TypeScript">
+  <img src="https://img.shields.io/badge/SCSS-CC6699?style=flat&logo=sass&logoColor=white" alt="SCSS">
+  <img src="https://img.shields.io/badge/Hosted-GitHub_Pages-222222?style=flat&logo=github" alt="GitHub Pages">
+</p>
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+</div>
 
-## Code scaffolding
+---
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## What It Is
 
-## Build
+A single-page landing for **Grupo Leiva**, built with Angular 17 and statically prerendered at build time — no server required.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## ▶️ View
 
-## Running unit tests
+**[anthoniriv.github.io/leiva-weblanding](https://anthoniriv.github.io/leiva-weblanding/)** · [View source](https://github.com/anthoniriv/leiva-weblanding)
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Sections
 
-## Running end-to-end tests
+Inicio · Nosotros · Misión · Visión · Promesa · Valores · Paquetes · Contáctanos
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## Tech
 
-## Further help
+| Area | Stack |
+| --- | --- |
+| Framework | Angular 17 |
+| Language | TypeScript |
+| Styling | SCSS |
+| Rendering | Static prerender (build-time) |
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Run Locally
+
+```bash
+npm install
+ng serve      # http://localhost:4200
+```
+
+Build for production (static):
+
+```bash
+npm run build   # prerendered output in dist/grupo-leiva/browser
+```
+
+---
+
+<div align="center">
+
+Made with ❤️ by [Anthoni Rivera](https://github.com/anthoniriv)
+
+</div>
