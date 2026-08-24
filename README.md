@@ -4,6 +4,8 @@
 
 **Landing page for Grupo Leiva — statically prerendered with Angular.**
 
+<img src="screenshot.png" alt="Grupo Leiva screenshot" width="600">
+
 <p>
   <a href="https://anthoniriv.github.io/leiva-weblanding/"><img src="https://img.shields.io/badge/View_Live-00C853?style=for-the-badge&logo=github" alt="View Live"></a>
 </p>
